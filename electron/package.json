@@ -1,0 +1,8 @@
+{
+  "name": "tutor-snc-desktop",
+  "version": "4.0.0",
+  "description": "Tutor SNC como aplicativo de desktop (Windows, macOS, Linux).",
+  "main": "main.js",
+  "scripts": { "start": "electron ." },
+  "devDependencies": { "electron": "^33.0.0" }
+}

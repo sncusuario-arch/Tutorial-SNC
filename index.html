@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gif.js/0.2.0/gif.js"></script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -28,30 +28,71 @@
     </div>
 
     <div class="nav-section">
+      <div class="nav-label" data-i18n="g.start">Início</div>
       <div class="nav-item" data-view="dashboard">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
-        <span>Dashboard</span>
-      </div>
-      <div class="nav-item" data-view="tutorials">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="1.8"/><path d="M14 3v6h6" stroke="currentColor" stroke-width="1.8"/></svg>
-        <span>Meus tutoriais</span>
-        <span class="nav-count" id="nav-count-tutorials">0</span>
-      </div>
-      <div class="nav-item" data-view="library">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v4H4zM4 12h16v4H4zM4 20h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <span>Biblioteca</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.dashboard">Dashboard</span><span class="nav-desc" data-i18n="d.dashboard">Resumo e atalhos para começar</span></div>
       </div>
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Projeto</div>
+      <div class="nav-label" data-i18n="g.tutorials">Tutoriais</div>
+      <div class="nav-item" data-view="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"/><path d="M14 3v6h6"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.tutorials">Meus tutoriais</span><span class="nav-desc" data-i18n="d.tutorials">Criar, abrir e excluir tutoriais</span></div>
+        <span class="nav-count" id="nav-count-tutorials">0</span>
+      </div>
+      <div class="nav-item" data-view="library">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 12h16v4H4zM4 20h10"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.library">Biblioteca</span><span class="nav-desc" data-i18n="d.library">Estilos de destaque e elementos</span></div>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label" data-i18n="g.publish">Publicar</div>
       <div class="nav-item" data-view="exports">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Exportações</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.exports">Exportar</span><span class="nav-desc" data-i18n="d.exports">Formato, moldura e animação</span></div>
+      </div>
+      <div class="nav-item" data-view="projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.projects">Projetos e backup</span><span class="nav-desc" data-i18n="d.projects">Salvar e abrir arquivos de projeto</span></div>
+      </div>
+    </div>
+
+    <div class="nav-section studio-section">
+      <div class="nav-label" data-i18n="g.studio">Estúdio · mídia</div>
+      <div class="nav-item" data-view="capture">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.capture">Captura de tela</span><span class="nav-desc" data-i18n="d.capture">Gravar a tela ou tirar um print</span></div>
+      </div>
+      <div class="nav-item" data-view="webcam">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6"/><circle cx="12" cy="10" r="2"/><path d="M8 21h8M12 16v5"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.webcam">Webcam</span><span class="nav-desc" data-i18n="d.webcam">Câmera, formato e posição</span></div>
+      </div>
+      <div class="nav-item" data-view="video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M22 7l-6 5 6 5V7z"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.video">Editor de vídeo</span><span class="nav-desc" data-i18n="d.video">Cortar, acelerar, zoom e texto</span></div>
+      </div>
+      <div class="nav-item" data-view="audio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.audio">Áudio</span><span class="nav-desc" data-i18n="d.audio">Gravar narração e ouvir</span></div>
+      </div>
+      <div class="nav-item" data-view="extensions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4v4a2 2 0 104 0h3v5h-3a2 2 0 100 4h3v5h-5v-3a2 2 0 10-4 0v3H4v-5h3a2 2 0 100-4H4V7h4V3z" /></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.extensions">Extensões</span><span class="nav-desc" data-i18n="d.extensions">Molduras, presets e opções extras</span></div>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label" data-i18n="g.system">Sistema</div>
+      <div class="nav-item" data-view="shortcuts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.shortcuts">Atalhos</span><span class="nav-desc" data-i18n="d.shortcuts">Teclas rápidas editáveis</span></div>
       </div>
       <div class="nav-item" data-view="settings">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33h0a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v0a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.8"/></svg>
-        <span>Configurações</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33h0a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v0a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        <div class="nav-text"><span class="nav-title" data-i18n="n.settings">Configurações</span><span class="nav-desc" data-i18n="d.settings">Tema, cor, idioma e armazenamento</span></div>
       </div>
     </div>
 
@@ -123,6 +164,9 @@
       <button title="Balão" data-type="balloon" onclick="Editor.startPlacing('balloon')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H8l-4 4V5z"/></svg></button>
       <button title="Tecla" data-type="key" onclick="Editor.startPlacing('key')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></button>
       <button title="Botão" data-type="button" onclick="Editor.startPlacing('button')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="8" rx="4"/></svg></button>
+      <button title="Texto livre" data-type="text" onclick="Editor.startPlacing('text')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></svg></button>
+      <button title="Número" data-type="badge" onclick="Editor.startPlacing('badge')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 9.5l2-1.5v8"/></svg></button>
+      <button title="Imagem / logo" data-type="image" onclick="Editor.startPlacing('image')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M21 16l-5-5-9 9"/></svg></button>
     </div>
     <div class="zoom-controls" id="zoom-controls" style="display:none;">
       <button title="Diminuir zoom" onclick="Editor.zoomBy(-0.15)">
@@ -285,7 +329,7 @@
 <!-- Onboarding -->
 <div class="modal-backdrop" id="modal-onboarding">
   <div class="modal">
-    <h2>Bem-vindo ao editor 👋</h2>
+    <h2>Bem-vindo ao editor</h2>
     <p class="modal-sub">Quatro coisas rápidas antes de começar:</p>
     <div class="onboarding-tips">
       <div class="onboarding-tip">
@@ -313,7 +357,7 @@
 
 <!-- Export -->
 <div class="modal-backdrop" id="modal-export">
-  <div class="modal">
+  <div class="modal wide">
     <div id="export-choose-view">
       <h2>Exportar tutorial</h2>
       <p class="modal-sub">Escolha o formato. Tudo é gerado localmente no seu navegador — nada sai da sua máquina.</p>
@@ -321,6 +365,7 @@
         <label for="step-duration">Duração de cada passo (segundos)</label>
         <input type="number" id="step-duration" value="4" min="1" max="15">
       </div>
+      <div id="export-opts-host" data-collapsed="1"></div>
       <div class="format-grid">
         <button class="format-card" onclick="Editor.exportChoose('html')">
           <div class="format-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/><path d="M8 10l-2 2 2 2M16 10l2 2-2 2M13 8l-2 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
@@ -377,6 +422,7 @@
 <!-- ============================================================
      SCRIPTS
      ============================================================ -->
-<script src="app.js"></script>
+<script src="js/app.js"></script>
+<script src="js/studio.js"></script>
 </body>
 </html>
